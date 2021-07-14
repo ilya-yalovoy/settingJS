@@ -91,4 +91,4 @@ self.addEventListener('notificationclose', function (event) {
             console.warn('[sw] error fetch closecb', err)
         })
     }
-})
+}

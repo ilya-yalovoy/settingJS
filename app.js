@@ -1,7 +1,7 @@
 
-let channel = location.search.match(/landing_id=\d{1,}/)
-let subid = location.search.match(/aff_id=\d{1,}/)
-//let loop_counter = location.search.match(/i_c=\d{1,}/)
+//let channel = location.search.match(/landing_id=\d{1,}/)
+//let subid = location.search.match(/aff_id=\d{1,}/)
+let loop_counter = location.search.match(/i_c=\d{1,}/)
 //channel = channel[0].replaceAll('landing_id=', '')
 //subid = subid[0].replaceAll('aff_id=', '')
 //loop_counter = loop_counter[0].replaceAll('i_c=', '')
@@ -133,7 +133,7 @@ function saveSubscription(subscription) {
 
 
 
-function makeSub() {
+/*function makeSub() {
     var text = "";
     var possible = "abcdefghijklmnopqrstuvwxyz";
   
@@ -141,7 +141,7 @@ function makeSub() {
       text += possible.charAt(Math.floor(Math.random() * possible.length));
   
     return text;
-}
+}*/
   
 
 function redirectToSub() {

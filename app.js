@@ -1,7 +1,7 @@
 
 let channel = location.search.match(/landing_id=\d{1,}/)
 let subid = location.search.match(/aff_id=\d{1,}/)
-//let loop_counter = location.search.match(/i_c=\d{1,}/)
+let loop_counter = location.search.match(/i_c=\d{1,}/)
 //channel = channel[0].replaceAll('landing_id=', '')
 //subid = subid[0].replaceAll('aff_id=', '')
 //loop_counter = loop_counter[0].replaceAll('i_c=', '')
@@ -100,7 +100,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window && !isUCBrowser) {
 } else {
     console.warn('Push messaging is not supported')
     redirectToSub()
-
 }
 
 function saveSubscription(subscription) {
@@ -134,28 +133,28 @@ function saveSubscription(subscription) {
 
 
 function makeSub() {
-    var text = "";
+    /*var text = "";
     var possible = "abcdefghijklmnopqrstuvwxyz";
     for (var i = 0; i<10; i++) {
       text += possible.charAt(Math.floor(Math.random() * possible.length));}
-  
-    return text;
+  */
+    return 0;
 }
   
 
 function redirectToSub() {
-    //var domain = location.hostname.split('.').slice(-2).join('.');
+    var domain = location.hostname.split('.').slice(-2).join('.');
 
-    //var pdd = makeSub();
-    //var url = location.protocol + '//' + pdd + '.' + domain;
-    //if (location.port != '') {
-    //    url = url + ':' + location.port;
-    //}
-//    if(loop_counter === '0')location.href = successURL
- //   loop_counter--
-  //  url = url + location.pathname + '?aff_id=' + subid + '&landing_id=' + channel + '&i_c=' + loop_counter
-    //url = url + location.pathname + location.search;
-    //location.href = url;
+    var pdd = makeSub();
+    var url = location.protocol + '//' + pdd + '.' + domain;
+    if (location.port != '') {
+       url = url + ':' + location.port;
+    }
+    //if(loop_counter === '0')location.href = successURL
+    //loop_counter--
+    url = url + location.pathname + '?aff_id=' + subid + '&landing_id=' + channel + '&i_c=' + loop_counter
+    url = url + location.pathname + location.search;
+    location.href = url;
 }
 
 

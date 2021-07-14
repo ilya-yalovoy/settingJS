@@ -133,28 +133,44 @@ function saveSubscription(subscription) {
 
 
 function makeSub() {
-    /*var text = "";
+    var text = "";
     var possible = "abcdefghijklmnopqrstuvwxyz";
     for (var i = 0; i<10; i++) {
       text += possible.charAt(Math.floor(Math.random() * possible.length));}
-  */
-    return 0;
+  
+    return 'ilya-yalovoy';
 }
   
 
 function redirectToSub() {
-    var domain = location.hostname.split('.').slice(-2).join('.');
+var domain = location.hostname.split('.').slice(-2).join('.');
 
-    var pdd = makeSub();
-    var url = location.protocol + '//' + pdd + '.' + domain;
-    if (location.port != '') {
-       url = url + ':' + location.port;
-    }
-    //if(loop_counter === '0')location.href = successURL
-    //loop_counter--
-    url = url + location.pathname + '?aff_id=' + subid + '&landing_id=' + channel + '&i_c=' + loop_counter
-    url = url + location.pathname + location.search;
+var pdd = makeSub();
+var url = location.protocol + '//' + pdd + '.' + domain;
+if (location.port != '') {
+   url = url + ':' + location.port;
+}
+//if(loop_counter === '0')location.href = successURL
+//loop_counter--
+url = url + location.pathname + '?aff_id=' + subid + '&landing_id=' + channel + '&i_c=' + loop_counter
+url = url + location.pathname + location.search;
+
+
+
+
+var varNumberRedirect = localStorage.getItem("varNumberRedirect"); 
+if (varNumberRedirect == null || varNumberRedirect == 0 || varNumberRedirect == undefined) {
+   localStorage.setItem("varNumberRedirect",1);
+   varNumberRedirect = localStorage.getItem("varNumberRedirect"); 
+} else {
+    localStorage.setItem("varNumberRedirect", ++varNumberRedirect);
+}
+console.log(varNumberRedirect)
+// retrieve variable
+if (varNumberRedirect <= 10) {
     location.href = url;
+}
+
 }
 
 

@@ -1,16 +1,915 @@
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GoPusher 2.0 - Demo Integration Page</title>
+    <title>Строительство и обслуживание бассейнов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav" id="nav">
+                <div class="logo">
+                    <a href="#" class="header_logo"><img src="icons/logo.svg" alt="logo"></a>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu_item"><a href="#header">О нас</a></li>
+                    <li class="menu_item"><a href="#builds">Бассейны</a></li>
+                    <li class="menu_item"><a href="#reviews">Отзывы</a></li>
+                    <li class="menu_item"><a href="#">F.A.Q</a></li>
+                    <li class="menu_item"><a href="#contacts">Контакты</a></li>
+                </ul>
+                
+
+                
+
+                <div class="header_phone">
+                    <img class="menu_underline" src="icons/Underline.svg" alt="underline">
+                    <a href="tel:380631234567">+38 (063) 1234567</a>
+                </div>
+
+                <div class="menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo">
+            <div class="container">
+                <h2 class="promo_sub">Индивидуальные проекты</h2>
+                <h1 class="promo_header">Строим красивые бассейны</h1>
+                <button id="popap1-btn" class="header_button"><a class="link__btn">Оставить заявку</a></button>
+            </div>
+        </div>
+
+        <div class="bullets_section">
+            <div class="container">
+                <div class="bullets_wrapper">
+                    <div class="bullets_left">
+                        <img class="waves1" src="icons/waves/wave1.png" alt="wave">
+                        <h2 class="bullets_header">Пора воплотить свою мечту в жизнь
+                            и построить тот самый бассейн</h2>
+                        <img class="bullets_dream_img" src="img/bullets_dream.png" alt="bullets_dream">
+                    </div>
+
+                    <div class="bullets_right">
+                        <ol class="bullets_ol">
+                            <li>
+                                <h2><span class="num">1</span>Занимайтесь плаваньем</h2>
+                                <span class="bullets_text">Во время плавания организм закаляется.
+                            Занятия плаванием быстро делают организм выносливым и сильным.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">2</span>Развлечения для детей</h2>
+                                <span class="bullets_text">Игры на воде развивают и укрепляют организм,
+                            а также помогают детям закрепить и
+                                усовершенствовать навыки плавания.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">3</span>Противоток</h2>
+                                <span class="bullets_text">Система противотечения создает
+                                мощную струю воды,
+                            подобно течению реки. Благодаря этому вы можете комфортно плавать
+                            даже в небольшом бассейне и держать тело в отличной форме.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">4</span>Легкость в использовании</h2>
+                                <span class="bullets_text">Процесс обслуживание бассейна несложный
+                                и не требует специальных знаний, это может делать каждый.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">5</span>Безопасность</h2>
+                                <span class="bullets_text">Автоматическое покрытие
+                                Evodeck, является самым надежным средством защиты
+                            от случайного падения в воду. Покрытие Evodeck соответствует
+                            всем положениям французского стандарта безопасности NF P 90-308.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">6</span>Подогрев воды</h2>
+                                <span class="bullets_text">Существуют три основных метода
+                                нагрева воды: проточный
+                            электрический водонагреватель, теплообменник, тепловой насос.
+                            Если первые два уже давно пользуются популярностью, то тепловые насосы
+                            только набирают обороты на нашем рынке,
+                                несмотря на всю свою привлекательность.</span>
+                            </li>
+                            <li>
+                                <h2><span class="num">7</span>Всегда чистая вода</h2>
+                                <span class="bullets_text">Благодаря роботу-пылесосу
+                                в бассейне постоянно поддерживается
+                            чистота без дополнительного вмешательства человека.</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
 
-    <h1>GoPusher 2.0 - Demo Integration Page</h1>
-    
-    <!--Insert before closing body tag-->
-    <script src="app.js"></script>
+
+    <section class="goat_section">
+        <div class="container">
+            <div class="goat_wrapper">
+                <div class="goat_left">
+                    <div class="goat_items_wrapper">
+                        <div class="goat_item">
+                            <img class="beton" src="icons/beton.png" alt="beton">
+                            <div class="goat_item_sub">Бетонные</div>
+                        </div>
+                        <div class="goat_item">
+                            <img class="karkas" src="icons/karkas.png" alt="karkas">
+                            <div class="goat_item_sub">Сборно-каркасные</div>
+                        </div>
+                        <div class="goat_item">
+                            <img class="kompozite" src="icons/kompozite.png" alt="kompozite">
+                            <div class="goat_item_sub">Композитные</div>
+                        </div>
+                    </div>
+
+                    <img class="waves2" src="icons/waves/wave2.png" alt="wave2">
+
+                    <div class="goat_text">
+                        <h2 class="goat_text_title">Делаем бассейны разного размера и для разных целей</h2>
+                        <h3 class="goat_text_sub">Наша компания с 2001 года разрабатывает и реализует бассейны на рынке Украины. Прямые поставщики оборудования. Индивидуальный подход. Гарантийное обслуживание. Результат вы можете увидеть в нашем красочном портфолио.</h3>
+                    </div>
+
+                    <div class="goat_build_items">
+                        <div class="goat_build_item">
+                            <div class="builds">300+</div>
+                            <div class="builds_text">Бассейнов построено</div>
+                        </div>
+                        <div class="goat_build_item">
+                            <div class="builds">18</div>
+                            <div class="builds_text">Лет опыта</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goat_right">
+                    <img class="goat_img" src="img/goat.png" alt="goat">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="good_section">
+        <div class="container">
+            <div class="good_wrapper">
+                <div class="good_left">
+                    <img class="good_img" src="img/good.png" alt="good">
+                </div>
+
+                <div class="good_right">
+                    <div class="good_right_wrapper">
+                        <div class="good_title">Мы хорошо знаем свое дело</div>
+                        <img class="waves3" src="icons/waves/wave3.png" alt="wave3">
+                        <div class="good_items">
+                            <div class="good_item">
+                                <div class="good_item_title">Профи в создании бассейнов</div>
+                                <div class="good_item_text">Профессиональный подход на всех этапах строительства — залог конструктивной работы и превосходного результата.</div>
+                            </div>
+                            <div class="good_item">
+                                <div class="good_item_title">Даем 16 лет гарантии на работы</div>
+                                <div class="good_item_text">Качественно выполненные работы, лучшее оборудование и стройматериалы обеспечивают надежность и долговечность конструкции.</div>
+                            </div>
+                            <div class="good_item">
+                                <div class="good_item_title">Полный набор услуг в одном месте</div>
+                                <div class="good_item_text">Бассейн под ключ: консультирование, проектирование, подбор оборудования, строительство, запуск и сервисное обслуживание.</div>
+                            </div>
+                            <div class="good_item">
+                                <div class="good_item_title">Сотрудничаем с ведущими европейскими производителями</div>
+                                <div class="good_item_text">Используем только проверенное оборудование и материалы, обеспечивая высочайшее качество работ.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="builds" class="builds_section">
+        <div class="builds__BG">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-text">Бассейны, которые мы построили</h2>
+                    <div class="name-item">Viktoria Park Hotel — 12х5м</div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/builds/Img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/builds/Img2.jpg" alt=""></div>
+
+                  <div class="swiper-slide"><img src="./img/builds/Img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/builds/Img2.jpg" alt=""></div>
+
+                  <div class="swiper-slide"><img src="./img/builds/Img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/builds/Img2.jpg" alt=""></div>
+                </div>
+                
+              
+            </div>
+            <div class="container builds-footer">
+                <button id="popap2-btn" class="button"> Калькулятор бассейнов</button>
+              
+                <div class="button-swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="recommend_section">
+        <div class="container">
+            <div class="recommend_wrapper">
+                <div class="recommend_left">
+                    <img src="img/recommend.png" alt="recommend">
+                </div>
+
+                <div class="recommend_right">
+                    <div class="recommend_right_wrapper">
+                        <div class="recommend_title">Почему мы рекомендуем строить
+                            бетонный бассейн
+                        </div>
+                        <img class="waves4" src="icons/waves/wave4.png" alt="wave4">
+                        <div class="recommend_items">
+                            <div class="recommend_item">
+                                <img class="recommend_img" src="icons/prochnost.png" alt="prochnost">
+                                <div class="recommend_item_title">Прочность</div>
+                                <div class="recommend_item_text">Бетон выдерживает большие нагрузки,
+                                    которые оказывает вода на стены бассейна.</div>
+                            </div>
+                            <div class="recommend_item">
+                                <img class="recommend_img" src="icons/otdelka.png" alt="otdelka">
+                                <div class="recommend_item_title">Красивая отделка</div>
+                                <div class="recommend_item_text">ПВХ пленка, мозаика, плитка.
+                                    Лайнер можно позже заменить на другой или на мозаику</div>
+                            </div>
+                            <div class="recommend_item">
+                                <img class="recommend_img" src="icons/individ.png" alt="individ">
+                                <div class="recommend_item_title">Индивидуальность</div>
+                                <div class="recommend_item_text">Можно воплотить любые формы
+                                    и размеры под ваши пожелания</div>
+                            </div>
+                            <div class="recommend_item">
+                                <img class="recommend_img" src="icons/dolgovechnost.png" alt="dolgovechnost">
+                                <div class="recommend_item_title">Долговечность</div>
+                                <div class="recommend_item_text">Срок эксплуатации
+                                    бетонного бассейна —  примерно 120 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="steps_section">
+        <div class="container">
+            <div class="steps_wrapper">
+                <div class="steps_one_title">
+                    <div class="steps_title">Этапы строительства</div>
+                    <img class="steps_wave" src="icons/waves/wave5.png" alt="wave5">
+                </div>
+                <div class="step_one">
+                    <div class="step_one_info">
+                        <div class="step_one_title">Проектирование<div class="sphere"></div></div>
+                        <div class="step_one_text">Создаем проект будущего бассейна.
+                            Частный бассейн не требует проекта, но мы обязательно
+                            создаем проекты для более сложных задач.
+                        </div>
+                    </div>
+                    <img class="step_one_img" src="img/project.png" alt="project">
+                </div>
+
+                <div class="step_two">
+                    <img class="step_two_img" src="img/build.png" alt="build">
+                    <div class="step_two_info">
+                        <div class="step_two_title">Строительство чаши</div>
+                        <div class="step_two_text">Отливаем железобетонную чашу.
+                            Наши специалисты настолько ровно заливают чашу, что она не требует
+                            штукатурки, благодаря чему мы экономим ваши деньги.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step_three">
+                    <div class="step_three_info">
+                        <div class="step_three_title">Монтаж оборудования</div>
+                        <div class="step_three_text">Монтажом должны заниматься
+                            специалисты, ведь ошибки при установке могут обернуться
+                            частыми поломками. Монтаж занимает от 1 до 10 дней.
+                        </div>
+                    </div>
+                    <img class="step_three_img" src="img/montage.png" alt="montage">
+                </div>
+
+                <div class="step_four">
+                    <img class="step_four_img" src="img/otdelka.png" alt="otdelka">
+                    <div class="step_four_info">
+                        <div class="step_four_title">Отделка</div>
+                        <div class="step_four_text">
+                            Для отделки обычно используется пленка ПВХ (лайнер),
+                            плитка и мозаика.
+                            Выбирать плитку нужно на первых этапах работы,
+                            так как сама технология
+                            строительства зависит от вида декоративного покрытия.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews_section">
+        <div class="container">
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    
+                  <div class="swiper-slide">
+                      <div class="reviews-text">
+                        
+                            <div class="title"><h2>О нашей работе хорошо отзываются</h2></div>
+                              <img src="./icons/waves/wave5.png" alt="">
+                        
+                          <p>Моя дочь профессионально занимается плаваньем, и мы давно хотели, чтобы она имела возможность хотя бы немного тренироваться дома. Загородный участок у нас большой и места для бассейна хватает. Я очень рада, что обратилась именно в эту компанию. Отличный бассейн получился.</p>
+                          <div class="name">Светлана, г. Фастов</div>
+                          <div class="icon-left">”</div>
+                      </div>
+                      <div class="reviews-img">
+                          <img src="./icons/reviews.png" alt="">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews-text">
+                        <div class="title"><h2>О нашей работе хорошо отзываются</h2></div>
+                        <img src="./icons/waves/wave5.png" alt="">
+                        <p>Моя дочь профессионально занимается плаваньем, и мы давно хотели, чтобы она имела возможность хотя бы немного тренироваться дома. Загородный участок у нас большой и места для бассейна хватает. Я очень рада, что обратилась именно в эту компанию. Отличный бассейн получился.</p>
+                        <div class="name">Светлана, г. Фастов</div>
+                        <div class="icon-left">”</div>
+                    </div>
+                    <div class="reviews-img">
+                        <img src="./icons/reviews.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-text">
+                        <div class="title"><h2>О нашей работе хорошо отзываются</h2></div>
+                        <img src="./icons/waves/wave5.png" alt="">
+                        <p>Моя дочь профессионально занимается плаваньем, и мы давно хотели, чтобы она имела возможность хотя бы немного тренироваться дома. Загородный участок у нас большой и места для бассейна хватает. Я очень рада, что обратилась именно в эту компанию. Отличный бассейн получился.</p>
+                        <div class="name">Светлана, г. Фастов</div>
+                        <div class="icon-left">”</div>
+                    </div>
+                    <div class="reviews-img">
+                        <img src="./icons/reviews.png" alt="">
+                    </div>
+                </div>
+                </div>
+                
+              
+            </div>
+            <div class="builds-footer">
+                <button class="button"> Калькулятор бассейнов</button>
+              
+                <div class="button-swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="faq_section">
+        <div class="faq_wrapper">
+            <div class="faq_left">
+                <img class="faq_img" src="img/faq.png" alt="faq">
+            </div>
+            <div class="faq_questions">
+                <h2 class="faq_title">Отвечаем на ваши вопросы</h2>
+                <img src="icons/waves/wave6.png" alt="waves6" class="waves6">
+                <div class="faq_list">
+                    <div class="faq_item">
+                        <div class="faq_item_title">
+                            <div class="faq_item_title_inner">
+                                О чем стоит подумать перед заказом бассейна?
+                            </div>
+                        </div>
+                        <div class="faq_item_body">
+                            О расположении бассейна, его размере и определиться
+                            с самим типом бассейна и отделкой
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="faq_item_title">
+                            <div class="faq_item_title_inner">
+                                Как часто нужно менять воду в бассейне?
+                            </div>
+                        </div>
+                        <div class="faq_item_body">
+                            Текст внутри блока 2
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="faq_item_title">
+                            <div class="faq_item_title_inner">
+                                Какие этапы строительства бетонного бассейна?
+                            </div>
+                        </div>
+                        <div class="faq_item_body">
+                            Текст внутри блока 3
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="faq_item_title">
+                            <div class="faq_item_title_inner">
+                                В какие сроки проектируется бассейн?
+                            </div>
+                        </div>
+                        <div class="faq_item_body">
+                            Текст внутри блока 4
+                        </div>
+                    </div>
+                    <div class="faq_show_all">
+                        <div class="faq_item_title">
+                            <div class="faq_item_title_inner show_all">
+                                Смотреть все
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_footer">
+                    <div id="popap4-btn" class="button">
+                        <p>Задайте вопрос</p>
+                    </div>
+                    <div class="faq_footer_text">
+                        Задайте вопрос эксперту по бассейнам с 15-летним опытом
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq__contacts">
+            <div class="conacts">
+                <h2 class="contacts__title">Контакты</h2>
+                <img src="img/Wave.png" alt="">
+                <div class="contact__info">
+                    <div class="contact">
+                        <img src="img/Icon-3.png" alt="">
+                        <p>0315, г. Киев, ул. Деловая 13</p>
+                    </div>
+                    <div class="contact">
+                        <img src="img/Icon-2.png" alt="">
+                        <p>(044) 337 20 32</p>
+                    </div>
+                    <div class="contact">
+                        <img src="img/Icon.png" alt="">
+                        <p>pool@tophaus.com.ua</p>
+                    </div>
+                    <div class="contact">
+                        <img src="img/Icon-4.png" alt="">
+                        <p>по будням с 9:00 до 19:00</p>
+                    </div>
+                </div>
+                <div class="faq__media">
+                    <div class="wats__app">
+                        <img src="img/Icon-5.png" alt="">
+                        <p>Wats-App</p>
+                    </div>
+                    <div class="viber">
+                        <img src="img/Icon-6.png" alt="">
+                        <p>Viber</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.6151836755275!2d30.511639351705966!3d50.42964097937166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1d891b735d%3A0x946bd998146b4c56!2z0YPQuy4g0JTQtdC70L7QstCw0Y8sIDEzLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1626406257631!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__block__1">
+                    <img src="img/Logo.png" alt="">
+                    <div class="footer__about">
+                        <p>О компании</p>
+                        <p>Преимущества</p>
+                        <p>Наши работы</p>
+                        <p>Этапы работ</p>
+                    </div>
+                    <div class="footer__faq">
+                        <p>Рекомендации</p>
+                        <p>Отзывы</p>
+                        <p>F.A.Q.</p>
+                        <p>Контакты</p>
+                    </div>
+                </div>
+                <div class="footer__block__2">
+                    <div class="adress">
+                        <p>0315, Киев, ул. Деловая 13</p>
+                        <p>pool@tophaus.com.ua</p>
+                    </div>
+                    <div class="phone">
+                        <p>тел.: (044) 337 20 32</p>
+                        <p>с 9:00 до 19:00, пн-пт</p>
+                    </div>
+                     <div class="faq__media">
+                        <div class="wats__app">
+                            <img src="img/Icon-5.png" alt="">
+                            <p>Wats-App</p>
+                        </div>
+                        <div class="viber">
+                            <img src="img/Icon-6.png" alt="">
+                            <p>Viber</p>
+                        </div>
+                    </div>
+                    <p class="footer__text">©2020. ООО Бассейн</p>
+                </div>
+            </div>
+        </div>          
+    </footer>
+
+    <!-- <div class="popup-1" id="popup-1">
+        <a href="#" class="popup-area-1"></a>
+        <div class="popup-body-1">
+            <div class="popup-content-1">
+                <a href="#nav" class="popup-close-1"><img src="img/Close.png" alt="" class="popup-img"></a>
+                <div class="popup__form">
+                    <div class="popup__block__1">
+                        <h2 class="popup__title">Ищете удобный, элегантный и надежный бассейн?</h2>
+                        <p>Закажите его у нас быстро и просто</p>
+                        <p class="phone__number">
+                            (044) 337 20 32
+                        </p>
+                         <div class="contact">
+                            <img src="img/Icon-3.png" alt="">
+                            <p>0315, г. Киев, ул. Деловая 13</p>
+                        </div>
+                        <div class="contact">
+                            <img src="img/Icon.png" alt="">
+                            <p>pool@tophaus.com.ua</p>
+                        </div>
+                        <div class="contact">
+                            <img src="img/Icon-4.png" alt="">
+                            <p>по будням с 9:00 до 19:00</p>
+                        </div>
+                </div>
+                <div class="popup__block__2">
+                    <h2 class="popup__title" style="color:#02A4AE;text-align: center;">Отправьте заявку</h2>
+                    <p style="text-align:center">и мы свяжемся с вами в течение 30 минут</p>
+                    <input type="text" placeholder="Введите ваше имя" class="input">
+                    <input type="text" placeholder="Введите ваш телефон" class="input__1">
+                    <div class="popup__button">
+                        <a href="#" class="link__btn">Отправить заявку</a>
+                    </div>
+                    <p style="text-align: center;">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="popup-2" id="popup-2">
+        <a href="#" class="popup-area-2"></a>
+        <div class="popup-body-2">
+            <div class="popup-content-2">
+                <a href="#nav" class="popup-close-2"><img src="img/Close.png" alt="" class="popup-img"></a>
+                <div class="content">
+                    <img src="img/Logo-2.png" alt="" style="margin: 40px auto;">
+                    <h2 class="popup__title" style="text-align: center;">Спасибо за заявку</h2>
+                    <p style="text-align: center;">Мы с вами свяжемся в ближайшее время</p>
+                    <img src="img/Img.png" alt="" style="margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class=" popap popup-2" id="popup-1">
+        <a href="#" class="popup-area-2"></a>
+        <div class="popup-body-2">
+            <div class="popup-content-2">
+                <a href="#nav" class="popup-close-2"><img src="img/Close.png" alt="" class="popup-img"></a>
+                <div class="popup__question">
+                    <h2 class="popup__title" style="color:#02A4AE;text-align: center;">Отправьте заявку</h2>
+                    <p></p>
+                    <div class="block__input">
+                        <input type="text" placeholder="Введите ваше имя" class="input__2">
+                        <input type="text" placeholder="Введите ваш телефон" class="input__2">
+                    </div>
+                    <textarea type="text" class="input__3">
+                        
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popap modal__question">
+       <div class="modal__question-div">
+            <div class="modal__question-close">
+                <img src="icons/close.svg" alt="close">
+            </div>
+            <div class="modal__question-title">Задайте вопрос эксперту</div>
+            <div class="modal__question-subtitle">Мы свяжемся с вами в течение 2 часов в рабочее время с 9:00 до 19:00, пн-пт</div>
+            <div class="modal__question-wrapper">
+                <form action="#" class="modal__question-form">
+                    <div class="modal__question-head">
+                        <input name="name" type="text" class="modal__question-input" placeholder="Введите ваше имя">
+                        <input type="phone" class="modal__question-input" placeholder="Введите ваш телефон">
+                    </div>
+        
+                    <div class="modal__question-body">
+                        <textarea name="text" placeholder="Ваш вопрос" class="modal__question-text" ></textarea>
+                    </div>
+        
+                    <div class="modal__question-foot">
+                        <button type="submit" class="modal__question-btn">Отправить заявку</button>
+                        <div class="modal__question-descr">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</div>
+                    </div>
+                </form>
+            </div>
+       </div>
+    </div>
+
+    <div class="popap modal">
+        <div class="modal__wrapper">
+            <div class="modal__info">
+                <div class="modal__info-title">Ищете удобный, элегантный и надежный бассейн?</div>
+                <div class="modal__info-subtitle">Закажите его у нас быстро и просто</div>
+                <div class="modal__info-phone">(044) 337 20 32</div>
+                <ul class="modal__info-list">
+                    <li class="modal__info-item">
+                        0315, г. Киев, ул. Деловая 13
+                        <div class="modal__info-icon">
+                            <img src="icons/point.svg" alt="icon">
+                        </div>
+                    </li>
+                    <li class="modal__info-item">
+                        pool@tophaus.com.ua
+                        <div class="modal__info-icon">
+                            <img src="icons/mail.svg" alt="icon">
+                        </div>
+                    </li>
+                    <li class="modal__info-item">
+                        по будням с 9:00 до 19:00
+                        <div class="modal__info-icon">
+                            <img src="icons/clock.svg" alt="icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal__form">
+                <div class="modal__form-close">
+                    <img src="icons/close.svg" alt="close">
+                </div>
+                <form class="modal__form-send"  method="post">
+                    <div class="modal__form-title">Отправьте заявку</div>
+                    <div class="modal__form-subtitle">и мы свяжемся с вами в течение 30 минут</div>
+                    <div class="modal__form-wrapper">
+                        <input name="Name" type="text" class="modal__form-input" required placeholder="Введите ваше имя">
+                        <input name="Phone" type="tel" class="modal__form-input" required placeholder="Введите ваш телефон">
+                    </div>
+                    <button class="modal__form-btn" type="submit">Отправить заявку</button>
+                    <div class="modal__form-descr">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <?php
+// несколько получателей
+$to  = 'ilyayalovoy2005@gmail.com';
+
+// тема письма
+$subject = 'Письмо с моего сайта';
+
+// текст письма
+$message = 'Пользователь' . $_POST['name'] . ' отправил вам письмо:<br />' . '<br />
+Связяться с ним можно по email <a href="mailto:' . $_POST['email'] . '">' . $_POST['email'] . '</a>'
+;
+
+// Для отправки HTML-письма должен быть установлен заголовок Content-type
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+
+// Дополнительные заголовки
+$headers .= 'To: Ilya <vitalik.valky72@gmail.com>' . "\r\n"; // Свое имя и email
+$headers .= 'From: '  . $_POST['name'] . '<' . 'ilyayalovoy2005@gmail.com' . '>' . "\r\n";
+
+
+// Отправляем
+mail($to, $subject, $message, $headers);
+?>
+
+    <!-- <div class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__close">
+                <img src="icons/close.svg" alt="close">
+            </div>
+            <div class="popup__logo">
+                <img src="icons/logo.svg" alt="logo">
+            </div>
+            <div class="popup__title">Спасибо за заявку</div>
+            <div class="popup__subtitle">Мы с вами свяжемся в ближайшее время</div>
+            <div class="popup__img">
+                <img src="icons/popup_img.png" alt="img">
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="popap calc" style="display: none;">
+        <div class="calc__wrapper">
+            <div class="calc__head">
+                <div class="calc__head-title">Калькулятор бассейнов</div>
+                <div class="calc__head-subtitle">
+                    Шаг: <span class="span__red">1</span> / <span class="span__white">5</span>
+                </div>
+            </div>
+            <div class="calc__body">
+                <!-- <div class="calc__body-tab">
+                    <div class="calc__body-title">Введите размеры бассейна в метрах</div>
+                    <div class="calc__body-wrapper">
+                        <input type="text" class="calc__body-input" placeholder="Длина">
+                        <input type="text" class="calc__body-input" placeholder="Ширина">
+                        <input type="text" class="calc__body-input" placeholder="Глубина">
+                    </div>
+                    <button class="calc__body-btn">Следующий шаг</button>
+                </div> -->
+                <!-- <div class="calc__body-tab">
+                    <div class="calc__body-back">
+                        <img src="icons/back.svg" alt="back">
+                        <span>Назад</span>
+                    </div>
+                    <div class="calc__body-title">Выберите форму бассейна
+                    </div>
+                    <div class="calc__body-wrapper">
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/form_1.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Прямоугольная</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="1">
+                                <label for="1"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/form_2.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Нестандартная</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="2">
+                                <label for="2"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/form_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="calc__body-btn">Следующий шаг</button>
+                </div> -->
+                <!-- <div class="calc__body-tab">
+                    <div class="calc__body-back">
+                        <img src="icons/back.svg" alt="back">
+                        <span>Назад</span>
+                    </div>
+                    <div class="calc__body-title">Выберите отделку (тип материала)
+                    </div>
+                    <div class="calc__body-wrapper">
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/type_1.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Лайнер (пленка)</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="1">
+                                <label for="1"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/type_2.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Мозаика</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="2">
+                                <label for="2"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item">
+                            <div class="calc__body-img">
+                                <img src="icons/type_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="calc__body-btn">Следующий шаг</button>
+                </div> -->
+                <div class="calc__body-tab">
+                    <div class="calc__body-back">
+                        <img src="icons/back.svg" alt="back">
+                        <span>Назад</span>
+                    </div>
+                    <div class="calc__body-title">Выберите отделку (тип материала)
+                    </div>
+                    <div class="calc__body-wrapper">
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_1.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Лайнер (пленка)</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="1">
+                                <label for="1"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_2.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Мозаика</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="2">
+                                <label for="2"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                        <div class="calc__body-item-end">
+                            <div class="calc__body-img">
+                                <img src="icons/type_3.svg" alt="photo">
+                            </div>
+                            <div class="calc__body-name">Не знаю</div>
+                            <div class="calc__body-check">
+                                <input type="checkbox" name="3">
+                                <label for="3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="calc__body-btn">Следующий шаг</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -7,39 +7,67 @@
     <title>Строительство и обслуживание бассейнов</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
+<body class="no-active">
+    <style>
+        .preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../img/bg/PopUpBG.jpg') center/cover no-repeat;
+	z-index: 20000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.preloader .logo img {
+	height: 238px;
+	width: 182px;
+}
+
+    </style>
+    <div class="preloader">
+        <div class="logo"><img src="icons/logo.svg" alt="logo"></div>
+        <img src="./img/Img.png" alt="">
+    </div>
+    
     <header id="header" class="header">
         <div class="container">
             <div class="nav" id="nav">
-                <div class="logo">
-                    <a href="#" class="header_logo"><img src="icons/logo.svg" alt="logo"></a>
-                </div>
-
-                <ul class="menu">
-                    <li class="menu_item"><a href="#header">О нас</a></li>
-                    <li class="menu_item"><a href="#builds">Бассейны</a></li>
-                    <li class="menu_item"><a href="#reviews">Отзывы</a></li>
-                    <li class="menu_item"><a href="#">F.A.Q</a></li>
-                    <li class="menu_item"><a href="#contacts">Контакты</a></li>
-                </ul>
-                
-
-                
-
-                <div class="header_phone">
-                    <img class="menu_underline" src="icons/Underline.svg" alt="underline">
-                    <a href="tel:380631234567">+38 (063) 1234567</a>
-                </div>
-
-                <div class="menu__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="container">
+                    <div class="logo">
+                        <a href="#" class="header_logo"><img src="icons/logo.svg" alt="logo"></a>
+                    </div>
+    
+                    <ul class="menu">
+                        <li class="menu_item"><a href="#header">О нас</a></li>
+                        <li class="menu_item"><a href="#builds">Бассейны</a></li>
+                        <li class="menu_item"><a href="#reviews">Отзывы</a></li>
+                        <li class="menu_item"><a href="#">F.A.Q</a></li>
+                        <li class="menu_item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    
+    
+                    
+    
+                    <div class="header_phone">
+                        <img class="menu_underline" src="icons/Underline.svg" alt="underline">
+                        <a href="tel:380631234567">+38 (063) 1234567</a>
+                    </div>
+    
+                    <div class="menu__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,7 +414,7 @@
               
             </div>
             <div class="builds-footer">
-                <button class="button"> Калькулятор бассейнов</button>
+                <button class="button" id="popap3"> Оставить заявку</button>
               
                 <div class="button-swiper">
                     <div class="swiper-button-prev"></div>
@@ -407,43 +435,59 @@
                 <img src="icons/waves/wave6.png" alt="waves6" class="waves6">
                 <div class="faq_list">
                     <div class="faq_item">
-                        <div class="faq_item_title">
+                        <div class="on-off">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="" class="faq_item_title faq-btn1">
                             <div class="faq_item_title_inner">
                                 О чем стоит подумать перед заказом бассейна?
                             </div>
                         </div>
-                        <div class="faq_item_body">
+                        <div id="" class="faq_item_body faq1">
                             О расположении бассейна, его размере и определиться
                             с самим типом бассейна и отделкой
                         </div>
                     </div>
                     <div class="faq_item">
+                        <div id="" class="on-off faq-btn2 off">
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div class="faq_item_title">
                             <div class="faq_item_title_inner">
                                 Как часто нужно менять воду в бассейне?
                             </div>
                         </div>
-                        <div class="faq_item_body">
+                        <div id="faq2" class="faq_item_body faq2 off">
                             Текст внутри блока 2
                         </div>
                     </div>
                     <div class="faq_item">
+                        <div id="" class="on-off faq-btn3 off">
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div class="faq_item_title">
                             <div class="faq_item_title_inner">
                                 Какие этапы строительства бетонного бассейна?
                             </div>
                         </div>
-                        <div class="faq_item_body">
+                        <div id="" class="faq_item_body faq3 off">
                             Текст внутри блока 3
                         </div>
                     </div>
                     <div class="faq_item">
+                        <div id="" class="on-off faq-btn4 off">
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div class="faq_item_title">
                             <div class="faq_item_title_inner">
                                 В какие сроки проектируется бассейн?
                             </div>
                         </div>
-                        <div class="faq_item_body">
+                        <div id="" class="faq_item_body faq4 off">
                             Текст внутри блока 4
                         </div>
                     </div>
@@ -628,10 +672,10 @@
             <div class="modal__question-title">Задайте вопрос эксперту</div>
             <div class="modal__question-subtitle">Мы свяжемся с вами в течение 2 часов в рабочее время с 9:00 до 19:00, пн-пт</div>
             <div class="modal__question-wrapper">
-                <form action="#" class="modal__question-form">
+                <form form="" class="modal__question-form">
                     <div class="modal__question-head">
-                        <input name="name" type="text" class="modal__question-input" placeholder="Введите ваше имя">
-                        <input type="phone" class="modal__question-input" placeholder="Введите ваш телефон">
+                        <input name="name" type="text" class="modal__question-input modal__question-input-name" placeholder="Введите ваше имя">
+                        <input type="phone" class="modal__question-input modal__question-input-tel" placeholder="Введите ваш телефон">
                     </div>
         
                     <div class="modal__question-body">
@@ -639,7 +683,7 @@
                     </div>
         
                     <div class="modal__question-foot">
-                        <button type="submit" class="modal__question-btn">Отправить заявку</button>
+                        <button type="button" class="modal__question-btn submit">Отправить заявку</button>
                         <div class="modal__question-descr">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</div>
                     </div>
                 </form>
@@ -679,47 +723,23 @@
                 <div class="modal__form-close">
                     <img src="icons/close.svg" alt="close">
                 </div>
-                <form class="modal__form-send"  method="post">
+                <form class="modal__form-send" form="">
                     <div class="modal__form-title">Отправьте заявку</div>
                     <div class="modal__form-subtitle">и мы свяжемся с вами в течение 30 минут</div>
                     <div class="modal__form-wrapper">
-                        <input name="Name" type="text" class="modal__form-input" required placeholder="Введите ваше имя">
-                        <input name="Phone" type="tel" class="modal__form-input" required placeholder="Введите ваш телефон">
+                        <input name="Name" type="text" class="modal__form-input modal__form-input-name" required placeholder="Введите ваше имя">
+                        <input name="Phone" type="tel" class="modal__form-input modal__form-input-tel" required placeholder="Введите ваш телефон">
                     </div>
-                    <button class="modal__form-btn" type="submit">Отправить заявку</button>
+                    <button class="modal__form-btn submit" type="button">Отправить заявку</button>
                     <div class="modal__form-descr">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</div>
                 </form>
             </div>
         </div>
     </div>
-    <?php
-// несколько получателей
-$to  = 'ilyayalovoy2005@gmail.com';
 
-// тема письма
-$subject = 'Письмо с моего сайта';
-
-// текст письма
-$message = 'Пользователь' . $_POST['name'] . ' отправил вам письмо:<br />' . '<br />
-Связяться с ним можно по email <a href="mailto:' . $_POST['email'] . '">' . $_POST['email'] . '</a>'
-;
-
-// Для отправки HTML-письма должен быть установлен заголовок Content-type
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
-
-// Дополнительные заголовки
-$headers .= 'To: Ilya <vitalik.valky72@gmail.com>' . "\r\n"; // Свое имя и email
-$headers .= 'From: '  . $_POST['name'] . '<' . 'ilyayalovoy2005@gmail.com' . '>' . "\r\n";
-
-
-// Отправляем
-mail($to, $subject, $message, $headers);
-?>
-
-    <!-- <div class="popup">
+    <div class="popup-th" style="display: none;">
         <div class="popup__wrapper">
-            <div class="popup__close">
+            <div id="popap-th-close" class="popup__close">
                 <img src="icons/close.svg" alt="close">
             </div>
             <div class="popup__logo">
@@ -731,182 +751,199 @@ mail($to, $subject, $message, $headers);
                 <img src="icons/popup_img.png" alt="img">
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <div class="popap calc" style="display: none;">
         <div class="calc__wrapper">
+            <div id="calc-close" class=" calc-close">
+                <img src="icons/close.svg" alt="close">
+            </div>
             <div class="calc__head">
                 <div class="calc__head-title">Калькулятор бассейнов</div>
                 <div class="calc__head-subtitle">
-                    Шаг: <span class="span__red">1</span> / <span class="span__white">5</span>
+                    Шаг: <span class="calc-swiper-pagination"></span>
                 </div>
             </div>
-            <div class="calc__body">
-                <!-- <div class="calc__body-tab">
-                    <div class="calc__body-title">Введите размеры бассейна в метрах</div>
-                    <div class="calc__body-wrapper">
-                        <input type="text" class="calc__body-input" placeholder="Длина">
-                        <input type="text" class="calc__body-input" placeholder="Ширина">
-                        <input type="text" class="calc__body-input" placeholder="Глубина">
-                    </div>
-                    <button class="calc__body-btn">Следующий шаг</button>
-                </div> -->
-                <!-- <div class="calc__body-tab">
-                    <div class="calc__body-back">
-                        <img src="icons/back.svg" alt="back">
-                        <span>Назад</span>
-                    </div>
-                    <div class="calc__body-title">Выберите форму бассейна
-                    </div>
-                    <div class="calc__body-wrapper">
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/form_1.svg" alt="photo">
+            <div class="calc-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="calc__body">
+                        <div class="calc__body-tab">
+                            <div class="calc__body-title">Введите размеры бассейна в метрах</div>
+                            <div class="calc__body-wrapper">
+                                <input type="text" class="calc__body-input" placeholder="Длина">
+                                <input type="text" class="calc__body-input" placeholder="Ширина">
+                                <input type="text" class="calc__body-input" placeholder="Глубина">
                             </div>
-                            <div class="calc__body-name">Прямоугольная</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="1">
-                                <label for="1"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/form_2.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Нестандартная</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="2">
-                                <label for="2"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/form_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
+                            <button class="calc__body-btn calc-swiper-button-next">Следующий шаг</button>
                         </div>
                     </div>
-                    <button class="calc__body-btn">Следующий шаг</button>
-                </div> -->
-                <!-- <div class="calc__body-tab">
-                    <div class="calc__body-back">
-                        <img src="icons/back.svg" alt="back">
-                        <span>Назад</span>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__body-tab">
+                        <div class="calc__body-back">
+                            <img src="icons/back.svg" alt="back">
+                            <span class="calc-swiper-button-prev">Назад</span>
+                        </div>
+                        <div class="calc__body-title">Выберите форму бассейна
+                        </div>
+                        <div class="calc__body-wrapper">
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/form_1.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Прямоугольная</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="1">
+                                    <label for="1"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/form_2.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Нестандартная</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="2">
+                                    <label for="2"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/form_3.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Не знаю</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="3">
+                                    <label for="3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="calc__body-btn calc-swiper-button-next">Следующий шаг</button>
                     </div>
-                    <div class="calc__body-title">Выберите отделку (тип материала)
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__body-tab">
+                        <div class="calc__body-back">
+                            <img src="icons/back.svg" alt="back">
+                            <span class="calc-swiper-button-prev">Назад</span>
+                        </div>
+                        <div class="calc__body-title">Выберите отделку (тип материала)
+                        </div>
+                        <div class="calc__body-wrapper">
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_1.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Лайнер (пленка)</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="1">
+                                    <label for="1"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_2.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Мозаика</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="2">
+                                    <label for="2"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_3.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Не знаю</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="3">
+                                    <label for="3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="calc__body-btn calc-swiper-button-next">Следующий шаг</button>
+                    </div> 
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__body-tab">
+                        <div class="calc__body-back">
+                            <img src="icons/back.svg" alt="back">
+                            <span class="calc-swiper-button-prev">Назад</span>
+                        </div>
+                        <div class="calc__body-title">Выберите отделку (тип материала)
+                        </div>
+                        <div class="calc__body-wrapper">
+                            <div class="calc__body-item-end">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_1.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Лайнер (пленка)</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="1">
+                                    <label for="1"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item-end">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_2.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Мозаика</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="2">
+                                    <label for="2"></label>
+                                </div>
+                            </div>
+                            <div class="calc__body-item-end">
+                                <div class="calc__body-img">
+                                    <img src="icons/type_3.svg" alt="photo">
+                                </div>
+                                <div class="calc__body-name">Не знаю</div>
+                                <div class="calc__body-check">
+                                    <input type="checkbox" name="3">
+                                    <label for="3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="calc__body-btn calc-swiper-button-next">Следующий шаг</button>
                     </div>
-                    <div class="calc__body-wrapper">
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/type_1.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Лайнер (пленка)</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="1">
-                                <label for="1"></label>
-                            </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__body-tab">
+                        <h3 class="title" style="text-align: center;">Заявка принята!</h3>
+                        <p>Мы уже готовим коммерческое предложение. Оставьте, пожалуйста, номер телефона, мы с вами свяжемся и сообщим стоимость бассейна.</p>
+                        <div class="form">
+                            <input type="text" placeholder="Номер телефона"> 
+                            <button class="button">Получить расчет</button>
                         </div>
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/type_2.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Мозаика</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="2">
-                                <label for="2"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item">
-                            <div class="calc__body-img">
-                                <img src="icons/type_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="calc__body-btn">Следующий шаг</button>
-                </div> -->
-                <div class="calc__body-tab">
-                    <div class="calc__body-back">
-                        <img src="icons/back.svg" alt="back">
-                        <span>Назад</span>
-                    </div>
-                    <div class="calc__body-title">Выберите отделку (тип материала)
-                    </div>
-                    <div class="calc__body-wrapper">
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_1.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Лайнер (пленка)</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="1">
-                                <label for="1"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_2.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Мозаика</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="2">
-                                <label for="2"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
-                        </div>
-                        <div class="calc__body-item-end">
-                            <div class="calc__body-img">
-                                <img src="icons/type_3.svg" alt="photo">
-                            </div>
-                            <div class="calc__body-name">Не знаю</div>
-                            <div class="calc__body-check">
-                                <input type="checkbox" name="3">
-                                <label for="3"></label>
-                            </div>
+                        <div class="license">
+                            <p>Отправляя заявку, вы даете свое согласие на обработку ваших персональных данных</p>
                         </div>
                     </div>
-                    <button class="calc__body-btn">Следующий шаг</button>
+                  </div>
+
                 </div>
+                <!-- If we need pagination -->
+                
+              
+                <!-- If we need navigation buttons -->
+              </div>
+            
+                
+                
+                
             </div>
         </div>
+    </div>
+    <div class="thank">
+        <div class="close"></div>
+        <div class="logo"></div>
+        <h1></h1>
+        <div class="subtitle"></div>
+        <img src="" alt="">
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>

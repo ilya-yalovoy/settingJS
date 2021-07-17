@@ -7,6 +7,13 @@ html, body {
 	scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
     scrollbar-width: 5px ; 
 }
+body.no-active {
+	overflow: hidden;
+}
+.logo:nth-child(1) {
+	position: relative;
+	z-index: 100;
+}
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
     width: 15px; /* ширина для вертикального скролла */
@@ -50,17 +57,17 @@ html, body {
 .container {
 	max-width: 925px;
 	padding: 10px;
-	margin: 0 auto
+	margin: 0 auto;
+	width: 100%;
 }
 .header {
 	margin-bottom: -50px;
 	min-height: 2377px;
 	background: url(../img/bg/BG.jpg) center center/cover no-repeat
 }
-.nav {
+.nav .container{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 32px;
 	align-items: center
 }
  .nav .menu {
@@ -84,6 +91,7 @@ html, body {
 .nav .header_phone{
 	display: flex;
 	flex-wrap: nowrap;
+	margin-left: 20px;
 }
  .nav .header_phone a {
 	color: #fff;
@@ -1103,13 +1111,57 @@ color: #003753;
 		justify-content: space-between;
 		z-index: 100;
 	}
+	.on-off {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		width: 22px;
+		height: 9px;
+		display: flex;
+	}
+	.on-off span {
+		height: 15px;
+		border: 1px solid #FE8F88;
+	}
+	.on-off span:nth-child(1) {
+		transform: rotate(50deg);
+		position: relative;
+		left: -10px;
+	}
+	.on-off span:nth-child(2) {
+		transform: rotate(-50deg);
+		right: -10px;
+	}
+	.on-off.off span:nth-child(1) {
+		transform: rotate(-50deg);
+	}
+	.on-off.off span:nth-child(2) {
+		transform: rotate(50deg);
+	}
+	.faq_item_body {transition: 0.5s;}
+	.faq_item_body.off {
+		height: 0px;
+		overflow: hidden;
+	}
+
+
+
+	.faq_item {
+		position: relative;
+		padding-right: 25px;
+	}
+
+
+
 	.menu__burger span {
 		width: 100%;
 		position: relative;
 		border: 2px solid #02A4AE;
 		transition: 0.5s;
 	}
-
+	.menu__burger.active span {
+		border: 2px solid #fff;
+	}
 	.menu__burger.active span:nth-child(1) {
 		transform: rotate(225deg);
 		bottom: -15px
@@ -1122,18 +1174,40 @@ color: #003753;
 		top: -11px;
 	}
 	.menu {
+		overflow-y: scroll;
 		opacity: 0;
 		transition: 0.5s ease-in;
 		position: fixed;
 		width: 100%;
-		height: 100vh;
+		height: auto;
 		top: -100%;
 		right: -100%;
 		padding: 110px 50px;
 		display: flex;
 		flex-direction: column;
-		background:#001E2E;
+		background: linear-gradient(96.96deg, #FE938C -10.88%, #FF655B 109.27%);
 		z-index: 20;
+	}
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	.header .nav .menu li {
+		width: 100%;
+		margin: 0 0 0 0;
+		height: 106px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-top: 1px solid #FFA49E;
+	}
+	.header .nav .menu a {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
 	}
 	.menu.active {
 		opacity: 1;
@@ -1142,7 +1216,6 @@ color: #003753;
 	}
 	.header .nav .menu a {
 		font-size: 20px;
-		color: #02a4ae
 	}
 	.nav .header_phone{
 		display: none

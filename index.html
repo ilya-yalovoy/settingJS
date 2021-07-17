@@ -6,39 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Строительство и обслуживание бассейнов</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/style.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="./js/swiper.js"></script>
 </head>
 <body class="no-active">
-    <style>
-        .preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url('../img/bg/PopUpBG.jpg') center/cover no-repeat;
-	z-index: 20000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.preloader .logo img {
-	height: 238px;
-	width: 182px;
-}
 
-    </style>
-    <div class="preloader">
-        <div class="logo"><img src="icons/logo.svg" alt="logo"></div>
-        <img src="./img/Img.png" alt="">
-    </div>
-    
     <header id="header" class="header">
         <div class="container">
             <div class="nav" id="nav">
@@ -590,59 +565,7 @@
         </div>          
     </footer>
 
-    <!-- <div class="popup-1" id="popup-1">
-        <a href="#" class="popup-area-1"></a>
-        <div class="popup-body-1">
-            <div class="popup-content-1">
-                <a href="#nav" class="popup-close-1"><img src="img/Close.png" alt="" class="popup-img"></a>
-                <div class="popup__form">
-                    <div class="popup__block__1">
-                        <h2 class="popup__title">Ищете удобный, элегантный и надежный бассейн?</h2>
-                        <p>Закажите его у нас быстро и просто</p>
-                        <p class="phone__number">
-                            (044) 337 20 32
-                        </p>
-                         <div class="contact">
-                            <img src="img/Icon-3.png" alt="">
-                            <p>0315, г. Киев, ул. Деловая 13</p>
-                        </div>
-                        <div class="contact">
-                            <img src="img/Icon.png" alt="">
-                            <p>pool@tophaus.com.ua</p>
-                        </div>
-                        <div class="contact">
-                            <img src="img/Icon-4.png" alt="">
-                            <p>по будням с 9:00 до 19:00</p>
-                        </div>
-                </div>
-                <div class="popup__block__2">
-                    <h2 class="popup__title" style="color:#02A4AE;text-align: center;">Отправьте заявку</h2>
-                    <p style="text-align:center">и мы свяжемся с вами в течение 30 минут</p>
-                    <input type="text" placeholder="Введите ваше имя" class="input">
-                    <input type="text" placeholder="Введите ваш телефон" class="input__1">
-                    <div class="popup__button">
-                        <a href="#" class="link__btn">Отправить заявку</a>
-                    </div>
-                    <p style="text-align: center;">Отправляя заявку, вы даете согласие на обработку ваших персональных данных</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
-    <!-- <div class="popup-2" id="popup-2">
-        <a href="#" class="popup-area-2"></a>
-        <div class="popup-body-2">
-            <div class="popup-content-2">
-                <a href="#nav" class="popup-close-2"><img src="img/Close.png" alt="" class="popup-img"></a>
-                <div class="content">
-                    <img src="img/Logo-2.png" alt="" style="margin: 40px auto;">
-                    <h2 class="popup__title" style="text-align: center;">Спасибо за заявку</h2>
-                    <p style="text-align: center;">Мы с вами свяжемся в ближайшее время</p>
-                    <img src="img/Img.png" alt="" style="margin: 0 auto;">
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <div class=" popap popup-2" id="popup-1">
         <a href="#" class="popup-area-2"></a>
@@ -797,7 +720,7 @@
                                 </div>
                                 <div class="calc__body-name">Прямоугольная</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="1">
+                                    <input type="radio" name="1">
                                     <label for="1"></label>
                                 </div>
                             </div>
@@ -807,7 +730,7 @@
                                 </div>
                                 <div class="calc__body-name">Нестандартная</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="2">
+                                    <input type="radio" name="1">
                                     <label for="2"></label>
                                 </div>
                             </div>
@@ -817,7 +740,7 @@
                                 </div>
                                 <div class="calc__body-name">Не знаю</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="3">
+                                    <input type="radio" name="1">
                                     <label for="3"></label>
                                 </div>
                             </div>
@@ -840,7 +763,7 @@
                                 </div>
                                 <div class="calc__body-name">Лайнер (пленка)</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="1">
+                                    <input type="radio" name="2">
                                     <label for="1"></label>
                                 </div>
                             </div>
@@ -850,7 +773,7 @@
                                 </div>
                                 <div class="calc__body-name">Мозаика</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="2">
+                                    <input type="radio" name="2">
                                     <label for="2"></label>
                                 </div>
                             </div>
@@ -860,7 +783,7 @@
                                 </div>
                                 <div class="calc__body-name">Не знаю</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="3">
+                                    <input type="radio" name="2">
                                     <label for="3"></label>
                                 </div>
                             </div>
@@ -883,7 +806,7 @@
                                 </div>
                                 <div class="calc__body-name">Лайнер (пленка)</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="1">
+                                    <input type="radio" name="3">
                                     <label for="1"></label>
                                 </div>
                             </div>
@@ -893,7 +816,7 @@
                                 </div>
                                 <div class="calc__body-name">Мозаика</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="2">
+                                    <input type="radio" name="3">
                                     <label for="2"></label>
                                 </div>
                             </div>
@@ -903,8 +826,7 @@
                                 </div>
                                 <div class="calc__body-name">Не знаю</div>
                                 <div class="calc__body-check">
-                                    <input type="checkbox" name="3">
-                                    <label for="3"></label>
+                                    <input type="radio" name="3">
                                 </div>
                             </div>
                         </div>
@@ -926,10 +848,6 @@
                   </div>
 
                 </div>
-                <!-- If we need pagination -->
-                
-              
-                <!-- If we need navigation buttons -->
               </div>
             
                 
@@ -945,7 +863,7 @@
         <div class="subtitle"></div>
         <img src="" alt="">
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
 </body>

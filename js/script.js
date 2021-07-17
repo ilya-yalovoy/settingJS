@@ -152,7 +152,7 @@ $('.modal__question-btn').click(function() {
 		
 	} else {
 		$('.modal__question').css('display', 'none');
-		$('body').toggleClass('no-active');
+		$('body').removeClass('no-active');
 		thank()
 	}
 })
@@ -160,18 +160,16 @@ $('.modal__question-btn').click(function() {
 
 $('#popap2-btn').click(function() {
 	$('.calc').css('display', 'block');
-	$('body').toggleClass('no-active');
+	$('body').addClass('no-active');
 	$('#calc-close').click(function() {
 		$('.calc').css('display', 'none');
-		$('body').toggleClass('no-active');
+		$('body').removeClass('no-active');
 	})
 })
 
 
 const swiper3 = new Swiper('.calc-swiper', {
-	// Optional parameters
-  
-	// If we need pagination
+
 	pagination: {
 	  el: '.calc-swiper-pagination',
 	  type: 'fraction',
@@ -181,7 +179,7 @@ const swiper3 = new Swiper('.calc-swiper', {
 	navigation: {
 	  nextEl: '.calc-swiper-button-next',
 	  prevEl: '.calc-swiper-button-prev',
-	},  
-	// And if we need scrollbar
+	}
+
   });
 

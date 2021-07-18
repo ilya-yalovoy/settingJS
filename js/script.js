@@ -1,3 +1,8 @@
+/*document.querySelector('script').onload = function() {
+	$('.calc').css('display', 'none');
+	$('.calc').css('transform', 'rotateZ(90deg)');
+}*/
+
 $(document).ready(function () {
 	$('.burger__menu').click(function(event) {
 		$('.burger__menu,.menu').toggleClass('active');
@@ -135,7 +140,7 @@ $('.modal__form-btn').click(function() {
 		thank()
 	}
 })
-
+$('body').removeClass('no-active');
 
 function thank() {
 	$('.popup-th').css('display', 'block');
@@ -157,14 +162,14 @@ $('.modal__question-btn').click(function() {
 	}
 })
 
-
+$('#calc-close').click(function() {
+	$('.calc').css('display', 'none');
+	$('body').removeClass('no-active');
+})
 $('#popap2-btn').click(function() {
-	$('.calc').css('display', 'block');
+	$('.calc').css();
 	$('body').addClass('no-active');
-	$('#calc-close').click(function() {
-		$('.calc').css('display', 'none');
-		$('body').removeClass('no-active');
-	})
+	
 })
 
 

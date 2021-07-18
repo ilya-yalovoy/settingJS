@@ -167,7 +167,7 @@ $('#calc-close').click(function() {
 	$('body').removeClass('no-active');
 })
 $('#popap2-btn').click(function() {
-	$('.calc').css();
+	$('.calc').css('display', 'block');
 	$('body').addClass('no-active');
 	
 })

@@ -2760,7 +2760,7 @@ color: #012B40;
   .popap {
       position:fixed;
       top: 10%;
-      z-index: 100;
+      z-index: 22000;
   }
   .popup-th {
     display: block;

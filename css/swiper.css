@@ -651,7 +651,6 @@ color: #012B40;
   }
   .header .promo {
     min-height: 800px
-    padding: 30px 0 0 0;
   }
   .step_three_img {width: 40%;}
   .header .promo .promo_sub {
@@ -2939,6 +2938,8 @@ color: #012B40;
   .calc__body-tab {
     position: relative;
     width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
   }
   .calc .swiper-slide {width: 100%;}
   .calc__body-back {
@@ -2970,8 +2971,9 @@ color: #012B40;
     margin-top: 20px;
     text-align: center
   }
-  .calc__body-item-end {
-    width: 125px
+  .calc__body-item-end ,
+  .calc__body-item {
+    width: 25%;
   }
   .calc__body-img {
     display: -webkit-box;
@@ -3517,11 +3519,12 @@ color: #012B40;
       pointer-events: auto
     }
   }
-  .calc .swiper-slide,
+  .calc .swiper-slide {
+    width: 99%;
+  }
   .calc .swiper-wrapper {
     width: 100%;
   }
-  
   .calc .calc-swiper {
     overflow: hidden;
     background: linear-gradient(123.99deg, #003A55 -3.13%, #001E2E 110.65%)
@@ -3533,13 +3536,20 @@ color: #012B40;
   
   .calc-close {
     position: absolute;
-    top: 60px;
+    top: 30px;
     right: 20px;
   }
-  .calc__body-tab:nth-child(5) {
+  .calc-form-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .calc__body-title {
+    padding-top: 30px;
+  }
+  .calc__body-wrapper {
+    width: 100%;
   }
   .calc__body-tab .title {
     font-family: Roboto;
@@ -3547,7 +3557,6 @@ color: #012B40;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
     color: #02A4AE;
@@ -3585,8 +3594,9 @@ color: #012B40;
   }
   
   
-  .calc input {
-    width: 95%;
+  .calc input[type="text"],
+  .calc input[type="num"]{
+    
     overflow-x: hidden;
     height: 56px;
     background: #00405E;
@@ -3626,4 +3636,74 @@ color: #012B40;
   }
   
   
-  
+  input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+}
+
+
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #02A4AE;
+    background-color:none;
+}
+
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 6px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: #02A4AE;
+}
+
+
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}

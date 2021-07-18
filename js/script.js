@@ -168,18 +168,16 @@ $('#popap2-btn').click(function() {
 })
 
 
-const swiper3 = new Swiper('.calc-swiper', {
 
-	pagination: {
-	  el: '.calc-swiper-pagination',
-	  type: 'fraction',
-	},
-
-	centeredSlides: true,
-	navigation: {
-	  nextEl: '.calc-swiper-button-next',
-	  prevEl: '.calc-swiper-button-prev',
-	}
-
+const swiper3 = new Swiper(".calc-swiper", {
+		speed: 100,
+        pagination: {
+          el: ".calc-swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".calc-swiper-button-next",
+          prevEl: ".calc-swiper-button-prev",
+        },
+    
   });
-

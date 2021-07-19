@@ -2463,6 +2463,11 @@ color: #012B40;
     padding: 0 60px 0 0;
     cursor: pointer
   }
+  .calc-form-slide p{
+    max-width: 600px;
+  }
+  .calc__body-wrapper {flex-wrap: nowrap;}
+  .calc__body-input {}
   .modal {
     pointer-events: none;
     opacity: 0;
@@ -2928,7 +2933,6 @@ color: #012B40;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -2944,6 +2948,7 @@ color: #012B40;
     font-size: 16px;
     line-height: 24px;
     margin-top: 20px;
+    margin-left: 20px;
     color: #3485AA
   }
   .calc__body-input:focus {
@@ -2997,7 +3002,6 @@ color: #012B40;
     height: 50vh;
     overflow-y: scroll;
   }
-  .calc .swiper-slide {width: 100%;}
   .calc__body-back {
     position: absolute;
     top: 0;
@@ -3054,6 +3058,10 @@ color: #012B40;
   @media screen and (max-width: 990px)  {
     .adress p:last-child{
       margin-left: 0px;
+    }
+    .calc__body-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .modal {
       pointer-events: none;
@@ -3589,9 +3597,7 @@ color: #012B40;
       pointer-events: auto
     }
   }
-  .calc .swiper-slide {
-    width: 99%;
-  }
+
   .calc .swiper-wrapper {
     width: 100%;
   }
@@ -3716,7 +3722,8 @@ input[type="radio"]:not(:checked)
     height: 30px;
 }
 
-
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
 input[type="radio"]:checked + label, 
 input[type="radio"]:not(:checked) + label {
     display: inline-block;
@@ -3727,6 +3734,8 @@ input[type="radio"]:not(:checked) + label {
     cursor: pointer;
 }
 
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
 input[type="radio"]:checked + label:before, 
 input[type="radio"]:not(:checked) + label:before {
     content: "";
@@ -3739,13 +3748,18 @@ input[type="radio"]:not(:checked) + label:before {
     background-color:none;
 }
 
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
 
 input[type="radio"]:checked + label:before, 
 input[type="radio"]:not(:checked) + label:before {
     border-radius: 100%;
 }
 
-
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
 input[type="radio"]:checked + label:after, 
 input[type="radio"]:not(:checked) + label:after {
     content: "";
@@ -3754,6 +3768,22 @@ input[type="radio"]:not(:checked) + label:after {
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #02A4AE;
+    border-bottom: 4px solid #02A4AE;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 
@@ -3767,11 +3797,26 @@ input[type="radio"]:not(:checked) + label:after {
     background-color: #02A4AE;
 }
 
-
+input[type="checkbox"]:not(:checked) + label:after, 
 input[type="radio"]:not(:checked) + label:after {
     opacity: 0;
 }
 
+input[type="checkbox"]:checked + label:after, 
 input[type="radio"]:checked + label:after {
     opacity: 1;
+}
+.calc__body-wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.calc__body-wrapper-grid .calc__body-item-end {
+  width: auto;
+  margin-bottom: 20px;
+}
+.calc input[type="checkbox"] {
+  flex: 0 0 35%;
+}
+.calc .swiper-slide {
+  max-width: 940px;
 }

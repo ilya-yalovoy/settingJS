@@ -9,13 +9,11 @@ $(document).ready(function () {
 		$('body').toggleClass('no-active');
 	});
 });
-
+$('.calc').css('opacity', '0');
 window.onload = function() {
 	$('body').toggleClass('no-active');
-	$('.preloader').css('opacity', '0');
-	setTimeout(() => {
-		$('.preloader').css('display', 'none');
-	}, 1000);
+	$('.calc').css('display', 'none');
+	$('.calc').css('opacity', '1');
 }
 
 

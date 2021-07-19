@@ -555,6 +555,7 @@ color: #012B40;
       scrollbar-width: 5px ; 
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
   body.no-active {
     overflow: hidden;
@@ -569,8 +570,9 @@ color: #012B40;
       height: 8px; /* высота для горизонтального скролла */
       background-color: #143861;
   }
-  
-  /* ползунок скроллбара */
+  .swiper-slide   {
+    width: 100%;
+  }
   ::-webkit-scrollbar-thumb {
     background-color: #506799;
       border-radius: 9em;
@@ -587,7 +589,10 @@ color: #012B40;
       display: none;
   }
   
-  
+  .footer__content {
+    width: 100%;
+    overflow:hidden;
+  }
   ::-webkit-scrollbar-button:horizontal:start:decrement {
       background:
           linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
@@ -603,12 +608,14 @@ color: #012B40;
           linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
       background-color: #f6f8f4;
   }
+  footer {
+    overflow: hidden;
+  }
   .container {
     max-width: 925px;
-    
     margin: 0 auto;
+    padding: 10px;
     width: 100%;
-    padding: 20px;
   }
   .header {
     padding-top: 30px;
@@ -822,6 +829,9 @@ color: #012B40;
     top: 10px;
     right: 0;
     width: 22px;
+    z-index: 2;
+    padding-left: 90%;
+    padding-bottom: 30px;
     height: 9px;
     display: flex;
     cursor: pointer
@@ -1169,6 +1179,7 @@ color: #012B40;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center
   }
   
   .viber{
@@ -1176,13 +1187,20 @@ color: #012B40;
     justify-content: space-between;
     flex-direction: row;
     margin-left: 20px;
+    align-items: center
   }
   
   .contact{
     display: flex;
     justify-content: start;
     flex-direction: row;
-    
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
   }
   
   .faq__contacts{
@@ -1205,12 +1223,13 @@ color: #012B40;
   }
   
   .contact p{
-    font-family: Roboto Condensed;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     margin-left: 20px;
+    color: #fff;
   }
   
   .contact__info{
@@ -1669,7 +1688,6 @@ color: #012B40;
     position: absolute;
     bottom: -50px;
     right: 20px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 144px;
@@ -1703,9 +1721,7 @@ color: #012B40;
   }
   
   
-  @media screen and (max-width: 900px) {
-    
-    }
+
   
   @media screen and (max-width: 990px) {
     .menu__burger {
@@ -1716,7 +1732,11 @@ color: #012B40;
       justify-content: space-between;
       z-index: 100;
     }
-    
+    footer .viber, .wats__app {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 0px;
+    }
   
   
   
@@ -1800,13 +1820,38 @@ color: #012B40;
       padding: 50px;
       background-color: #012b41
     }
-    .footer__content {
+    .recommend_section .recommend_wra {
+      width: 70%;
     }
-    .footer__block__2 * {
+    .builds_section .title {width: 90%;}
+    .footer__block__2 > * {
       flex-direction: column;
     }
+    .waves2,
+    .waves3,
+    .waves4 {width: 70%;}
+    .container {
+      overflow-x: hidden;
+      width: 100%;
+    }
+    .reviews-text img {
+      width: 90%;
+    }
+    .builds-footer {
+      width: 90%;
+    }
+    footer {
+      width: 100%;
+      overflow-x: hidden;
+    }
     .faq__media {
-      display: none;
+      position: absolute;
+      bottom: 0;
+      flex-direction: row;
+      left: 10px;
+    }
+    footer .viber {
+      margin-left: 20px;
     }
   }
   
@@ -1816,8 +1861,11 @@ color: #012B40;
       display: none;
     }
     .faq_section {padding: 10px;}
+    .footer__content {
+      flex-direction: column;
+    }
     .footer__block__2 {
-      display: none;
+      margin-top: 20px;
     }
     .reviews-img {
       display: none;
@@ -1849,10 +1897,7 @@ color: #012B40;
     .footer__about {
       margin-left: 20px;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none;
-    }
+    
   }
   
   .good_item_text {
@@ -2147,7 +2192,6 @@ color: #012B40;
   }
   .builds_section {
     background-color: #012b41;
-    min-height: 1180px;
     background: url("../img/bg/BG_build.png") center center/cover no-repeat;
     background-color: #012b41
   }
@@ -2180,7 +2224,7 @@ color: #012B40;
     font-family: "Roboto Condensed";
     font-size: 32px;
     font-weight: 700;
-    width: 85%;
+    width: 70%;
   }
   .recommend_section .recommend_wrapper .recommend_right .recommend_right_wrapper .waves4 {
     margin-top: 39px
@@ -2827,6 +2871,18 @@ color: #012B40;
     width: 100%;
     min-height: 618px
   }
+  @media screen and (max-width: 990px) {
+    .calc {
+      position: fixed;                                                    /*sdfksjBSD<JVbsdkv,ksdvb,bsdjvbsjdbv*/
+      top: 0%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      max-width: 950px;
+      width: 100%;
+      min-height: 618px
+    }
+  }
   .calc__head {
     height: 200px;
     display: flex;
@@ -2996,6 +3052,9 @@ color: #012B40;
   
   
   @media screen and (max-width: 990px)  {
+    .adress p:last-child{
+      margin-left: 0px;
+    }
     .modal {
       pointer-events: none;
       opacity: 0;
@@ -3344,6 +3403,16 @@ color: #012B40;
   }
   
   @media screen and (max-width: 500px)  {
+    .footer__block__1 img{
+      margin: 0;
+      flex: 0 0 49.7px;
+      width: 49.7px;
+      height: 65px;
+    }
+    .builds-footer {
+      flex-direction: column-reverse;
+    }
+    .button-swiper {margin: 20px;}
     .modal {
       pointer-events: none;
       opacity: 0;
@@ -3360,6 +3429,7 @@ color: #012B40;
       background: linear-gradient(123.99deg, #003A55 -3.13%, #001E2E 110.65%);
       padding: 46px 20px 26px;
     }
+    .faq__media {display:none}
     .modal__wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3575,9 +3645,7 @@ color: #012B40;
       align-items: center;
       flex-direction: column;
     }
-    .footer__block__1 {
-      flex-direction: column;
-    }
+    
   }
   .calc__body-tab p {
     font-family: Roboto;

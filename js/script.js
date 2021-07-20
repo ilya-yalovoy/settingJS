@@ -178,6 +178,7 @@ const swiper3 = new Swiper(".calc-swiper", {
           el: ".calc-swiper-pagination",
           type: "fraction",
         },
+		simulateTouch:false,
         navigation: {
           nextEl: ".calc-swiper-button-next",
           prevEl: ".calc-swiper-button-prev",
